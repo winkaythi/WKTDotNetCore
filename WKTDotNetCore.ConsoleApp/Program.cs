@@ -50,14 +50,21 @@ Console.WriteLine("Hello, World!");
 //    Console.WriteLine("------------------------------------");
 //}
 
-AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
-//adoDotNetExample.Read();
-//adoDotNetExample.Create("title","author","content");
-//adoDotNetExample.Update(13, "test title", "test author wkt", "test content");
-//adoDotNetExample.Delete(13);
-adoDotNetExample.Edit(13);
-adoDotNetExample.Edit(12);
- 
-Console.ReadKey();
+//AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
+////adoDotNetExample.Read();
+////adoDotNetExample.Create("title","author","content");
+////adoDotNetExample.Update(13, "test title", "test author wkt", "test content");
+////adoDotNetExample.Delete(13);
+//adoDotNetExample.Edit(13);
+//adoDotNetExample.Edit(12);
+
+//Console.ReadKey();
 
 //Ado.Net Read 
+
+//DapperExample dapperExample = new DapperExample();
+//dapperExample.Run();
+
+EFCoreExample eFCoreExample = new EFCoreExample();
+eFCoreExample.Run();
+Console.ReadLine();
