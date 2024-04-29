@@ -8,8 +8,10 @@ using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 using Dapper;
+using WKTDotNetCore.ConsoleApp.Dtos;
+using WKTDotNetCore.ConsoleApp.Services;
 
-namespace WKTDotNetCore.ConsoleApp
+namespace WKTDotNetCore.ConsoleApp.DapperExamples
 {
     internal class DapperExample
     {
@@ -75,7 +77,7 @@ namespace WKTDotNetCore.ConsoleApp
             string message = result > 0 ? "Saving Successful" : "Saving Failed";
             Console.WriteLine(message);
         }
-        private void Update(int id,string title, string author, string content)
+        private void Update(int id, string title, string author, string content)
         {
             var Item = new BlogDto
             {
@@ -101,7 +103,7 @@ namespace WKTDotNetCore.ConsoleApp
             var Item = new BlogDto
             {
                 BlogId = id,
-              
+
             };
             string query = @"Delete [dbo].[Tbl_Blog]
  WHERE BlogId = @BlogId";

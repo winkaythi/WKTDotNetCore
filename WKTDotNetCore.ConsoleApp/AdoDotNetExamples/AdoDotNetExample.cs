@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Reflection.Metadata;
 
-namespace WKTDotNetCore.ConsoleApp
+namespace WKTDotNetCore.ConsoleApp.AdoDotNetExamples
 {
     internal class AdoDotNetExample
     {
@@ -48,7 +48,7 @@ namespace WKTDotNetCore.ConsoleApp
                 Console.WriteLine("------------------------------------");
             }
         }
-        public void Create(string title,string author,string content) 
+        public void Create(string title, string author, string content)
         {
             SqlConnection connection = new SqlConnection(_sqlConnectionStringBuilder.ConnectionString);
             connection.Open();
@@ -73,7 +73,7 @@ namespace WKTDotNetCore.ConsoleApp
             Console.WriteLine(message);
 
         }
-        public void Update(int id , string title, string author, string content)
+        public void Update(int id, string title, string author, string content)
         {
             SqlConnection connection = new SqlConnection(_sqlConnectionStringBuilder.ConnectionString);
             connection.Open();
@@ -124,7 +124,7 @@ namespace WKTDotNetCore.ConsoleApp
             sqlDataAdapter.Fill(dt);
 
             connection.Close();
-            if(dt.Rows.Count == 0)
+            if (dt.Rows.Count == 0)
             {
                 Console.WriteLine("No data found.");
                 return;
@@ -135,7 +135,7 @@ namespace WKTDotNetCore.ConsoleApp
             Console.WriteLine("Blo Author => " + dr["BlogAuthor"]);
             Console.WriteLine("Blo Content => " + dr["BlogContent"]);
             Console.WriteLine("------------------------------------");
-            
+
         }
     }
 }

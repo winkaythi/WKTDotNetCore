@@ -4,8 +4,9 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WKTDotNetCore.ConsoleApp.Dtos;
 
-namespace WKTDotNetCore.ConsoleApp
+namespace WKTDotNetCore.ConsoleApp.EFCoreExamples
 {
     internal class EFCoreExample
     {
@@ -21,7 +22,7 @@ namespace WKTDotNetCore.ConsoleApp
         }
         private void Read()
         {
-            
+
             var lst = db.Blogs.ToList();
             foreach (BlogDto item in lst)
             {
@@ -70,7 +71,7 @@ namespace WKTDotNetCore.ConsoleApp
             item.BlogTitle = title;
             item.BlogAuthor = author;
             item.BlogContent = content;
-           int result = db.SaveChanges();
+            int result = db.SaveChanges();
             string message = result > 0 ? "Updating Successful" : "Updating Failed";
             Console.WriteLine(message);
 

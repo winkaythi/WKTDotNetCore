@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WKTDotNetCore.RestApi", "WKTDotNetCore.RestApi\WKTDotNetCore.RestApi.csproj", "{F2575591-AFD5-45E5-96B2-8AB3B064B109}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8796A555-1E3F-4AEB-8635-294E294F9777}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8796A555-1E3F-4AEB-8635-294E294F9777}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8796A555-1E3F-4AEB-8635-294E294F9777}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2575591-AFD5-45E5-96B2-8AB3B064B109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2575591-AFD5-45E5-96B2-8AB3B064B109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2575591-AFD5-45E5-96B2-8AB3B064B109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2575591-AFD5-45E5-96B2-8AB3B064B109}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
