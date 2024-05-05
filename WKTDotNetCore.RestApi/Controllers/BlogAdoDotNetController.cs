@@ -176,6 +176,7 @@ namespace WKTDotNetCore.RestApi.Controllers
             return Ok(message);
 
         }
+        [HttpDelete("{id}")]
         public IActionResult DeleteBlog(int id)
         {
             string query = @"delete from Tbl_Blog where BlogId=@BlogID";
