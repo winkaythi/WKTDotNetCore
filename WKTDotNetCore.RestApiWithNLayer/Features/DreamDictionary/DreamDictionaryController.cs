@@ -10,7 +10,7 @@ namespace WKTDotNetCore.RestApiWithNLayer.Features.DreamDictionary
     {
         private async Task<DreamDictionary> GetDataAsync()
         {
-            string jsonstr = await System.IO.File.ReadAllTextAsync("data.json");
+            string jsonstr = await System.IO.File.ReadAllTextAsync("DreamDictionary.json");
 
             var model = JsonConvert.DeserializeObject<DreamDictionary>(jsonstr);
             return model;
