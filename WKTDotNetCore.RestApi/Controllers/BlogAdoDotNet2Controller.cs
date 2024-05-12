@@ -88,6 +88,79 @@ namespace WKTDotNetCore.RestApi.Controllers
             string message = result > 0 ? "Updating Successful" : "Updating Fail";
             return Ok(message);
         }
-      
+        [HttpPatch("{id}")]
+        public IActionResult PatchBlog(int id, BlogModel blog)
+        {
+            var item = FindById(id);
+            if (item is null)
+            {
+                return NotFound("No data Found.");
+            }
+            // Initialize a list to store parameters
+            List<AdoDotNetParameter> parameters = new List<AdoDotNetParameter>();
+
+            // Initialize conditions string
+            string conditions = string.Empty;
+
+            if (!string.IsNullOrEmpty(blog.BlogTitle))
+            {
+                conditions += " [BlogTitle] = @BlogTitle, ";
+                parameters.Add(new AdoDotNetParameter("@BlogTitle", blog.BlogTitle));
+            }
+            if (!string.IsNullOrEmpty(blog.BlogAuthor))
+            {
+                conditions += " [BlogAuthor] = @BlogAuthor, ";
+                parameters.Add(new AdoDotNetParameter("@BlogAuthor", blog.BlogAuthor));
+            }
+            if (!string.IsNullOrEmpty(blog.BlogContent))
+            {
+                conditions += " [BlogContent] = @BlogContent, ";
+                parameters.Add(new AdoDotNetParameter("@BlogContent", blog.BlogContent));
+            }
+
+            // Check if any conditions were added
+            if (conditions.Length == 0)
+            {
+                return NotFound("No data to update");
+            }
+
+            // Remove the trailing comma and space
+            conditions = conditions.Substring(0, conditions.Length - 2);
+
+            // Add BlogId parameter
+            parameters.Add(new AdoDotNetParameter("@BlogId", id));
+
+            // Build the SQL query string
+            string query = $@"UPDATE [dbo].[Tbl_Blog] SET {conditions} WHERE BlogId=@BlogId";
+
+            // Execute the query with parameters
+            int result = _adoDotNetService.Execute(query, parameters.ToArray());
+
+            string message = result > 0 ? "Updating Successful." : "Updating Failed.";
+            return Ok(message);
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteBlog(int id)
+        {
+            var item = FindById(id);
+            if (item is null)
+            {
+                return NotFound("No data Found.");
+            }
+            string query = @"delete from Tbl_Blog where BlogId=@BlogId";
+
+            int result = _adoDotNetService.Execute(query, new AdoDotNetParameter("@BlogId", id));
+            string message = result > 0 ? "Deleting Successful." : "Deleting Failed.";
+            return Ok(message);
+        }
+        private BlogModel? FindById(int id)
+        {
+            string query = "select * from Tbl_Blog where BlogId=@BlogId";
+            var item = _adoDotNetService.QueryFirstOrDefault<BlogModel>(query, new AdoDotNetParameter("@BlogId", id));
+            return item;
+
+        }
+
     }
 }

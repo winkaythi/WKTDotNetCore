@@ -13,7 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WKTDotNetCore.RestApi", "WKTDotNetCore.RestApi\WKTDotNetCore.RestApi.csproj", "{F2575591-AFD5-45E5-96B2-8AB3B064B109}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WKTDotNetCore.Shared", "WKTDotNetCore.Shared\WKTDotNetCore.Shared.csproj", "{27EE07FE-1B3F-4002-BAD3-BA0F98F8A2F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WKTDotNetCore.Shared", "WKTDotNetCore.Shared\WKTDotNetCore.Shared.csproj", "{27EE07FE-1B3F-4002-BAD3-BA0F98F8A2F1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WKTDotNetCore.RestApiWithNLayer", "WKTDotNetCore.RestApiWithNLayer\WKTDotNetCore.RestApiWithNLayer.csproj", "{755446E1-7B78-448E-AB41-3DAAC1E0134E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WKTDotNetCore.ConsoleAppHttpClient", "WKTDotNetCore.ConsoleAppHttpClient\WKTDotNetCore.ConsoleAppHttpClient.csproj", "{0F63BB5D-A39F-482F-ADFD-3A10410B4133}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WKTDotNetCore.ConsoleAppHttpClientExample", "WKTDotNetCore.ConsoleAppHttpClientExample\WKTDotNetCore.ConsoleAppHttpClientExample.csproj", "{B42FC2AB-A1D2-49F1-B9E0-1D32966204E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WKTDotNetCore.ConsoleAppRestClientExamples", "WKTDotNetCore.ConsoleAppRestClientExamples\WKTDotNetCore.ConsoleAppRestClientExamples.csproj", "{C2A3DF19-2058-41B8-9A37-AC8BD1BE00D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,22 @@ Global
 		{27EE07FE-1B3F-4002-BAD3-BA0F98F8A2F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27EE07FE-1B3F-4002-BAD3-BA0F98F8A2F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27EE07FE-1B3F-4002-BAD3-BA0F98F8A2F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{755446E1-7B78-448E-AB41-3DAAC1E0134E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{755446E1-7B78-448E-AB41-3DAAC1E0134E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{755446E1-7B78-448E-AB41-3DAAC1E0134E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{755446E1-7B78-448E-AB41-3DAAC1E0134E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F63BB5D-A39F-482F-ADFD-3A10410B4133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F63BB5D-A39F-482F-ADFD-3A10410B4133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F63BB5D-A39F-482F-ADFD-3A10410B4133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F63BB5D-A39F-482F-ADFD-3A10410B4133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B42FC2AB-A1D2-49F1-B9E0-1D32966204E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B42FC2AB-A1D2-49F1-B9E0-1D32966204E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B42FC2AB-A1D2-49F1-B9E0-1D32966204E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B42FC2AB-A1D2-49F1-B9E0-1D32966204E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2A3DF19-2058-41B8-9A37-AC8BD1BE00D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2A3DF19-2058-41B8-9A37-AC8BD1BE00D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2A3DF19-2058-41B8-9A37-AC8BD1BE00D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2A3DF19-2058-41B8-9A37-AC8BD1BE00D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
