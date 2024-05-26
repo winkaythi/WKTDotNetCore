@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WKTDotNetCore.ConsoleAppRes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WKTDotNetCore.PizzaApi", "WKTDotNetCore.PizzaApi\WKTDotNetCore.PizzaApi.csproj", "{6B87FA84-32E7-46B0-BFF9-F1E281B22A1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WKTDotNetCore.ConsoleAppRefitExamples", "WKTDotNetCore.ConsoleAppRefitExamples\WKTDotNetCore.ConsoleAppRefitExamples.csproj", "{CB53C52D-6CE7-46F8-8B21-B70FC82FC3BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WKTDotNetCore.ConsoleAppRefitExamples", "WKTDotNetCore.ConsoleAppRefitExamples\WKTDotNetCore.ConsoleAppRefitExamples.csproj", "{CB53C52D-6CE7-46F8-8B21-B70FC82FC3BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WKTDotNetCore.WinFormsApp", "WKTDotNetCore.WinFormsApp\WKTDotNetCore.WinFormsApp.csproj", "{3D9F452C-6E75-4C1B-8C19-2802E3B853DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{CB53C52D-6CE7-46F8-8B21-B70FC82FC3BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB53C52D-6CE7-46F8-8B21-B70FC82FC3BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB53C52D-6CE7-46F8-8B21-B70FC82FC3BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D9F452C-6E75-4C1B-8C19-2802E3B853DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D9F452C-6E75-4C1B-8C19-2802E3B853DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D9F452C-6E75-4C1B-8C19-2802E3B853DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D9F452C-6E75-4C1B-8C19-2802E3B853DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
